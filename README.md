@@ -1,57 +1,31 @@
 masiv_model
 ==============================
 
-A short description of the project.
+## Introducción
 
-Project Organization
+Un establecimiento de comercio en línea ha dispuesto un conjunto de datos transaccionales, los cuales corresponden a todas las transacciones que se realizaron entre diciembre de 2010 y diciembre de 2011. El conjunto de datos "Online Retail" puede descargarse desde la siguiente dirección electrónica: <https://archive.ics.uci.edu/ml/datasets/Online%20Retail>. En este repositorio encontrará una mejor y más detallada descripción de los datos.
+
+## Requerimientos del negocio
+
+En primer lugar, la compañía está interesada en entender el comportamiento (transaccional) de sus clientes. Para tal fin, se requiere realizar una segmentación de clientes a fin de identificar desde los mejores clientes hasta aquellos que ya no son clientes. ¿Acaso también se podrá realizar un pronóstico del número de transacciones que realizaron los clientes en el período de diciembre de 2011 a diciembre de 2012? De ser así, ¿se podrá pronosticar cuánto dinero gastaron los clientes en tales transacciones? (Obsérvese que los datos no comprenden transacciones en el período 2011 - 2012).
+
+Por otro lado, la compañía está también interesada en incrementar sus ventas y el monto de las mismas ("cross selling" y "up selling", respectivamente). El gerente, un asiduo lector de "Fortune", ha [sabido](http://fortune.com/2012/07/30/amazons-recommendation-secret/) que parte significativa de las ventas de Amazon se debe a las recomendaciones de productos. Por lo tanto, le solicita implementar un sistema de recomendación de productos teniendo en cuenta las características de los datos provistos.
+
+Organización del proyecto
 ------------
-
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── README.md
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    │   ├── external       
+    │   ├── interim        
+    │   ├── processed      
+    │   └── raw            
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    ├── notebooks
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── references
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    ├── reports            
+    │   └── figures 
     │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
-
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+    ├── requirements.txt   
+ --------
