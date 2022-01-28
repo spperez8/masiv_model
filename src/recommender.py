@@ -13,11 +13,11 @@ def PurchaseMatrix(datos):
     donde 1 indica si el cliente ha comprado el producto j,
     0 en otro caso
 
-    Parameters
+    Parametros
     --------
     datos: Data frame
-           Data frame tiene las columnas CustomerID, ProductID y unidades
-    Returns
+           Data frame tiene las columnas CustomerID, ProductID y Quantity
+    Retorna
     ------
     Mincidencia : ndarray
                  Matriz de incidencia.
@@ -53,16 +53,16 @@ def PurchaseMatrix(datos):
 
 def favorito(datos):
     """
-    Halla el PluCD favorito segun la cantidad de unidades compradas
+    Halla el Producto favorito segun la cantidad de unidades compradas
 
-    Parameters
+    Parametros
     ----------
     datos: Data frame
-           Data frame tiene las columnas Partyid, PluCD y unidades
+           Data frame tiene las columnas CustomerID, ProductID y Quantity
     Returns
     ------
     preferido: Data frame
-               Returns un data frame con el producto preferido
+               Retorna un data frame con el producto preferido
                segun las unidades
 
     """
@@ -74,10 +74,6 @@ def favorito(datos):
     preferido.drop(columns=["Quantity"], inplace=True)
     
     return preferido
-
-
-
-
 
 
 

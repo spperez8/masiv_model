@@ -26,6 +26,7 @@ Organización del proyecto
     │
     ├── reports            
     │   └── figures 
+    ├── src            
     │
-    ├── requirements.txt   
+    └──requirements.txt   
  --------
